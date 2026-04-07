@@ -11,7 +11,7 @@
   "scripts": {
     "eslint": "eslint .",
     "prettier": "prettier --write \"**/*.{js,md,json}\"",
-    "prepare": "is-ci || husky install"
+    "prepare": "test -d .git && husky install || true"
   },
   "dependencies": {
     "underscore": "^1.13.8"
