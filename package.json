@@ -11,10 +11,10 @@
   "scripts": {
     "eslint": "eslint .",
     "prettier": "prettier --write \"**/*.{js,md,json}\"",
-    "prepare": "husky install"
+    "prepare": "test -d .git && husky install || true"
   },
   "dependencies": {
-    "underscore": "1.13.6"
+    "underscore": "^1.13.8"
   },
   "devDependencies": {
     "eslint": "8.42.0",
